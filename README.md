@@ -15,8 +15,8 @@ async/await 处理 USB 指令，UI 不卡顿
 Dispatcher 安全跨线程更新 UI
 Invoke（同步等待） / BeginInvoke（异步不等待） 区分使用场景
 狂点按钮不会崩：按钮禁用 + isProcessing 拦截 + CancellationToken
-5. 线程选型（面试必背）
-Task.Run：USB 通信、耗时操作（你项目主力）
+5. 线程选型
+Task.Run：USB 通信、耗时操作
 Thread：长驻后台监听
 Parallel.ForEach：大数据计算
 DispatcherTimer：定时刷新 UI
